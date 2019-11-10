@@ -16,7 +16,6 @@
     import userList from './components/userList/userList';
     import session from './components/session/session';
     import contents from './components/contents/contents';
-    import {mapActions} from 'vuex'
 
     export default {
         name: 'App',
@@ -26,12 +25,6 @@
             session,
             contents
         },
-        methods:{
-            ...mapActions(['initSessions'])
-        },
-        created(){
-            this.initSessions();
-        }
     }
 </script>
 
